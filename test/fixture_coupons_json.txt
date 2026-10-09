@@ -1,0 +1,20 @@
+# API Response Information
+
+Below is the response from an API call. To help you understand the data, I've provided:
+
+1. A detailed description of all fields in the response structure
+2. The complete API response
+
+## Response Structure
+
+> Content-Type: application/json
+
+- **data**: 优惠券列表 (Type: object)
+  - **data.list**: 券列表 (Type: array)
+    - **data.list[].couponId**: 券ID (Type: string)
+    - **data.list[].couponName**: 券名称 (Type: string)
+- **message**: (Type: string)
+
+## Original Response
+
+{"success":true,"code":200,"message":"请求成功","data":{"list":[{"couponId":"C001","couponName":"满30减6"},{"couponId":"C002","couponName":"第二份半价"},{"couponId":"C003","couponName":"免费中薯条"},{"couponId":"C004","couponName":"早餐满15减5"},{"couponId":"C005","couponName":"新品立减3元"},{"couponId":"C006","couponName":"麦咖啡买一送一"},{"couponId":"C007","couponName":"甜品站满20减8"},{"couponId":"C008","couponName":"积分兑换券"},{"couponId":"C009","couponName":"周末专享9折"},{"couponId":"C010","couponName":"外送免配送费"},{"couponId":"C011","couponName":"巨无霸套餐减5"}]}}

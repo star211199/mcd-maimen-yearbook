@@ -1,0 +1,11 @@
+_scratch/
+mcd-yearbook-out/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+.idea/
+.vscode/

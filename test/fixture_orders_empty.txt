@@ -1,0 +1,21 @@
+# API Response Information
+
+Below is the response from an API call. To help you understand the data, I've provided:
+
+1. A detailed description of all fields in the response structure
+2. The complete API response
+
+## Response Structure
+
+> Content-Type: application/json
+
+- **data**: No comments found. (Type: object)
+  - **data.list**: 订单列表 (Type: array)
+    - **data.list[].orderId**: 订单编码 (Type: string)
+    - **data.list[].realTotalAmount**: 总金额 (Type: string)
+- **message**: No comments found. (Type: string)
+- **traceId**: No comments found. (Type: string)
+
+## Original Response
+
+{"success":true,"code":200,"message":"请求成功","datetime":"2026-10-09 21:28:23","traceId":"fixture-empty-0002","data":{}}

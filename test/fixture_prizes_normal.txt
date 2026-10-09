@@ -1,0 +1,25 @@
+# API Response Information
+
+Below is the response from an API call. To help you understand the data, I've provided:
+
+1. A detailed description of all fields in the response structure
+2. The complete API response
+
+## Response Structure
+
+> Content-Type: application/json
+
+- **data**: 我的抽奖奖品列表 (Type: object)
+  - **data.status**: 业务状态 (Type: object)
+    - **data.status.code**: 状态码，如 SUCCESS/NOT_LOGIN (Type: string)
+  - **data.prizes**: 奖品列表，按中奖时间(recordTime)倒序 (Type: array)
+    - **data.prizes[].id**: 奖品记录ID (Type: string)
+    - **data.prizes[].name**: 奖品名称 (Type: string)
+    - **data.prizes[].recordTime**: 中奖时间 (Type: string)
+    - **data.prizes[].statusText**: 状态文案 (Type: string)
+  - **data.hasMore**: 是否还有下一页 (Type: boolean)
+- **message**: 响应消息 (Type: string)
+
+## Original Response
+
+{"success":true,"code":200,"message":"请求成功","datetime":"2026-10-09 21:28:36","traceId":"fixture-prize-0001","data":{"status":{"code":"SUCCESS","message":"成功"},"prizes":[{"id":"PRZ001","name":"免费中薯条券","imageUrl":"","prizeType":1,"recordTime":"2026-09-02 20:11:03","status":1,"statusText":"可用","timeRemindText":"7天内有效"},{"id":"PRZ002","name":"麦乐鸡5块券","imageUrl":"","prizeType":1,"recordTime":"2026-07-18 19:05:41","status":1,"statusText":"已使用","timeRemindText":""},{"id":"PRZ003","name":"免费麦咖啡券","imageUrl":"","prizeType":1,"recordTime":"2026-05-01 10:22:00","status":2,"statusText":"已失效","timeRemindText":""}],"pageNum":1,"pageSize":10,"hasMore":false,"truncated":false}}

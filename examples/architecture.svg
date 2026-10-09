@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="636" viewBox="0 0 880 636" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#5A5B68"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15161C"/>
+      <stop offset="1" stop-color="#0F1014"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="636" rx="20" fill="url(#bgGrad)"/>
+
+  <text x="40" y="44" font-size="20" font-weight="700" fill="#F4F4F6">麦麦年鉴 · 数据流</text>
+  <text x="840" y="44" font-size="15" fill="#9B9BA6" text-anchor="end">采集 → 计算 → 渲染，三段分离，各自可测</text>
+
+  <!-- 采集 -->
+  <text x="40" y="98" font-size="14" fill="#DA291C" font-weight="700">01 采集</text>
+  <rect x="330" y="76" width="220" height="60" rx="14" fill="#DA291C"/>
+  <text x="440" y="103" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">麦当劳 MCP Server</text>
+  <text x="440" y="123" font-size="13" fill="#FFE1DE" text-anchor="middle">mcp.mcd.cn · 35 个 Tool</text>
+
+  <line x1="440" y1="136" x2="440" y2="176" stroke="#5A5B68" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="452" y="162" font-size="12.5" fill="#9B9BA6">5 个只读 Tool</text>
+
+  <rect x="330" y="180" width="220" height="56" rx="14" fill="#21222B"/>
+  <text x="440" y="205" font-size="16" font-weight="600" fill="#F4F4F6" text-anchor="middle">raw/*.txt</text>
+  <text x="440" y="224" font-size="12.5" fill="#9B9BA6" text-anchor="middle">返回原文原样落盘</text>
+
+  <line x1="440" y1="236" x2="440" y2="276" stroke="#5A5B68" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 计算 -->
+  <text x="40" y="298" font-size="14" fill="#FFC72C" font-weight="700">02 计算</text>
+  <rect x="110" y="280" width="240" height="60" rx="14" fill="#21222B"/>
+  <text x="230" y="306" font-size="16" font-weight="600" fill="#F4F4F6" text-anchor="middle">mcd_parse.py</text>
+  <text x="230" y="325" font-size="12.5" fill="#9B9BA6" text-anchor="middle">剥离 MCP 文本包装</text>
+
+  <line x1="352" y1="310" x2="426" y2="310" stroke="#5A5B68" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="430" y="280" width="250" height="60" rx="14" fill="#21222B"/>
+  <text x="555" y="306" font-size="16" font-weight="600" fill="#F4F4F6" text-anchor="middle">mc_year_engine.py</text>
+  <text x="555" y="325" font-size="12.5" fill="#9B9BA6" text-anchor="middle">归一化 · 计分 · 段位与称号</text>
+
+  <path d="M 555 340 L 555 366 L 440 366 L 440 388" fill="none" stroke="#5A5B68" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="320" y="392" width="240" height="56" rx="14" fill="#FFC72C"/>
+  <text x="440" y="417" font-size="16" font-weight="800" fill="#1A1206" text-anchor="middle">yearbook.json</text>
+  <text x="440" y="436" font-size="12.5" fill="#5A4410" text-anchor="middle">唯一数据源 · schema mcd-yearbook/1</text>
+
+  <line x1="440" y1="448" x2="440" y2="486" stroke="#5A5B68" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 渲染 -->
+  <text x="40" y="512" font-size="14" fill="#4CC38A" font-weight="700">03 渲染</text>
+  <rect x="330" y="490" width="220" height="54" rx="14" fill="#21222B"/>
+  <text x="440" y="514" font-size="16" font-weight="600" fill="#F4F4F6" text-anchor="middle">render_card.py</text>
+  <text x="440" y="532" font-size="12.5" fill="#9B9BA6" text-anchor="middle">纯函数渲染 · 字节级一致</text>
+
+  <path d="M 330 517 L 268 517 L 268 572" fill="none" stroke="#5A5B68" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M 440 544 L 440 572" fill="none" stroke="#5A5B68" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M 550 517 L 612 517 L 612 572" fill="none" stroke="#5A5B68" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="183" y="576" width="170" height="44" rx="12" fill="#191A21" stroke="#2C2D38"/>
+  <text x="268" y="604" font-size="15" font-weight="600" fill="#4CC38A" text-anchor="middle">card.svg</text>
+
+  <rect x="355" y="576" width="170" height="44" rx="12" fill="#191A21" stroke="#2C2D38"/>
+  <text x="440" y="604" font-size="15" font-weight="600" fill="#4CC38A" text-anchor="middle">card.html</text>
+
+  <rect x="527" y="576" width="170" height="44" rx="12" fill="#191A21" stroke="#2C2D38"/>
+  <text x="612" y="604" font-size="15" font-weight="600" fill="#4CC38A" text-anchor="middle">report.md</text>
+</svg>

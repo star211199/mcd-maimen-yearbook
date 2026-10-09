@@ -1,0 +1,128 @@
+{
+  "account": {
+    "account_id_tail": "888694",
+    "accumulative_point": 4200,
+    "available_point": 1280,
+    "currency": "麦享会积分",
+    "expired_point": 60,
+    "expiring_this_month": 120,
+    "used_point": 2860
+  },
+  "favourite": {
+    "name": "薯条(大)",
+    "times": 8
+  },
+  "generated_at": "2026-10-09 21:30:00",
+  "highlights": [
+    "最爱单品：薯条(大)（8 次）",
+    "最佳时段：早餐时段，占 33%",
+    "常驻门店：广州天河城店",
+    "平均每单 3.2 件商品",
+    "全年活跃 12 天 / 解锁 12 种餐品"
+  ],
+  "metrics": {
+    "active_days": 12,
+    "active_months": 10,
+    "coupon_count": 11,
+    "distinct_products": 12,
+    "excluded_orders": 1,
+    "max_single_order_yuan": 96.0,
+    "multi_party_orders": 1,
+    "order_count": 12,
+    "prize_count": 3,
+    "time_bucket_variety": 4,
+    "total_amount_yuan": 466.5,
+    "total_quantity": 39
+  },
+  "peak_bucket": {
+    "count": 4,
+    "key": "breakfast",
+    "name": "早餐时段",
+    "share": 0.333
+  },
+  "period": {
+    "mode": "calendar-year",
+    "note": "统计周期为 2026 自然年",
+    "year": 2026
+  },
+  "provenance": {
+    "disclaimer": "本报告由 mcd-maimen-yearbook 基于麦当劳 MCP 返回的账户数据确定性生成，为开发者创意作品，非麦当劳官方产品；不含医疗或营养建议。",
+    "source_tools": [
+      "now-time-info",
+      "order-list",
+      "query-my-account",
+      "query-my-coupons",
+      "query-my-prizes"
+    ],
+    "year": 2026
+  },
+  "rank": {
+    "floor": 75,
+    "motto": "守着一整片麦田",
+    "name": "麦田守望者",
+    "name_en": "FieldKeeper",
+    "next": {
+      "name": "麦门宗师",
+      "need": 4.5
+    }
+  },
+  "schema": "mcd-yearbook/1",
+  "score": {
+    "axes": [
+      {
+        "hint": "你尝过多少种餐品",
+        "key": "explore",
+        "max": 25,
+        "name": "菜单探索",
+        "value": 18.0
+      },
+      {
+        "hint": "你把麦麦吃成了习惯吗",
+        "key": "persist",
+        "max": 25,
+        "name": "麦门坚持",
+        "value": 25.0
+      },
+      {
+        "hint": "券与积分用得多不多",
+        "key": "value",
+        "max": 25,
+        "name": "薅羊毛功力",
+        "value": 24.5
+      },
+      {
+        "hint": "下单频次与时段跨度",
+        "key": "activity",
+        "max": 25,
+        "name": "到店活跃",
+        "value": 18.0
+      }
+    ],
+    "total": 85.5
+  },
+  "titles": [
+    {
+      "key": "fries_master",
+      "name": "薯条鉴定师",
+      "reason": "薯条类出现 11 次"
+    },
+    {
+      "key": "nugget_collector",
+      "name": "鸡块收藏家",
+      "reason": "麦乐鸡类出现 6 次"
+    },
+    {
+      "key": "bigmac_devotee",
+      "name": "巨无霸信徒",
+      "reason": "巨无霸出现 5 次"
+    }
+  ],
+  "top_store": {
+    "name": "广州天河城店",
+    "share": 0.75,
+    "times": 9
+  },
+  "warnings": [
+    "已排除 1 笔取消/退款订单"
+  ]
+}

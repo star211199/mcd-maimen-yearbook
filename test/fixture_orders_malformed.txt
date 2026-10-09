@@ -1,0 +1,16 @@
+# API Response Information
+
+Below is the response from an API call. To help you understand the data, I've provided:
+
+1. A detailed description of all fields in the response structure
+2. The complete API response
+
+## Response Structure
+
+> Content-Type: application/json
+
+- **data**: No comments found. (Type: object)
+
+## Original Response
+
+{"success":true,"code":200,"message":"请求成功","data":{"list":[{"orderId":"A1","createTime":"2026-01-01 10:00:00","orderProductList":[{"productName":"巨无霸","quantity":1}],"realTotalAmount":"25.00"
